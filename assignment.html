@@ -1,0 +1,81 @@
+<!docttype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CREATE ASSIGNMENT</title>
+</head>
+    <body>
+    <style>
+body {
+    background-image: url('images/bg3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+div.logo1{
+    margin-top: -30px;
+    padding-left: 670px;
+    padding-top: -100px;
+}
+form{
+    margin-top: 140px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+}
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button{
+    background-color: blue;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    opacity: 0.8;
+}
+.cancelbtn{
+    width:auto;
+    padding: 10px 10px;
+    background-color: red;
+}
+.container{
+    padding: 16px;
+    font-size: 25;
+}
+ 
+.clink{
+    margin-left: 840px;
+    font-size: 25px;
+    color: black;
+}
+
+    </style>
+    <form action="assignment.php" method="post">
+    <div class="container">
+        <div class="container" style="background-color: #f1f1f1">
+        <center><h1>Create Assignment</h1></center>
+        </div>
+     <label for="fname"><b>Assignment Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="aname" id="aname"required><br>
+     <label for="dob"><b>Starting Date</b></label>
+                 <input type="date"  name="sdob" id="sdob" required /><br>
+      <label for="dob"><b>Last Date</b></label>
+                 <input type="date"  name="ldob" id="ldob" required /><br>
+    <button type="submit">Login</button>
+    </div>
+        <div class="container" style="background-color: #f1f1f1">
+        </div>
+    </form>
+    </body>
+</html>

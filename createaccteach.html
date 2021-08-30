@@ -1,0 +1,114 @@
+<!docttype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CREATE ACCOUNT FOR TEACHER</title>
+</head>
+<body>
+<style>
+body {
+    background-image: url('images/bg5.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+form{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=date],
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button{
+    background-color: blue;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    opacity: 0.8;
+}
+.cancelbtn{
+    width:auto;
+    padding: 10px 10px;
+    background-color: red;
+}
+.container1{
+    padding: 16px;
+    font-size: 25px;
+}
+{
+    .cancelbtn{
+        width: 100%;
+    }
+}
+.llink{
+    padding-left: 880px;
+    font-size: 25px;
+    color: black;
+}
+.container2{
+    padding: 16px;
+    font-size: 25px; 
+}
+.cancelbtn1{
+        width: 100%;
+    background-color: blue;
+    color: white;
+    height: 40px;
+    margin-top: 20px;
+    }
+.llink1{
+    padding-left: 980px;
+    font-size: 25px;
+    color: black;
+}
+</style>
+<form action="createteach.php" method="post">
+<div class="container1">
+        <div class="container1" style="background-color: #f1f1f1">
+        <center><h1>Create Account</h1></center>
+        </div>
+    <label for="fname"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" id="fname"required><br>
+     <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required><br>
+    <label for="pno"><b>Mobile number</b></label>
+        <input type="tel" placeholder="Enter Mobile Number" name="pno" pattern="[0-9]{10}" id="pno" required /><br>
+     <label for="emailid"><b>Email-ID</b></label>
+        <input type="email" placeholder="Enter Email-id" name="emailid" id="emailid" required><br>
+     <label for="fname"><b>Teaching Subject</b></label>
+        <input type="text" placeholder="Enter The Subject That Has To Be Teached" name="teachingsub" id="teachingsub"required><br>
+    <label><b>Gender</b></label><br>
+    <input type="radio" name="gender" value="male"><b>Male</b><br>
+    <input type="radio" name="gender" value="female"><b>Female</b><br>
+                 <input type="radio" name="gender" value="other"><b>Other</b><br><br>
+    <label for="dob"><b>Date of Birth</b></label>
+                 <input type="date"  name="dob" id="dob" required /><br>
+    <label for="crtpswd"><b>Create Password</b></label>
+        <input type="password" placeholder="New Password" name="crtpswd" id="crtpswd" required/><br>
+    <label for="conpswd"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="conpswd" id="conpswd" required/>
+    <button type="submit">Submit</button>
+    </div>
+        <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+            <a href="teacher.html" class="llink"><b>Login Form</b></a>
+        </div>    
+</form>    
+</body>    
+</html>
